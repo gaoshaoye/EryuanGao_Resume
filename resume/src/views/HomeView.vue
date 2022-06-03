@@ -2,6 +2,8 @@
   <div class="Eryuan-resume__box">
     <ResumeHeader />
     <ResumeExperience />
+    <ResumeSkills />
+    <ResumeEducation />
   </div>
 </template>
 
@@ -9,12 +11,16 @@
 import { defineComponent } from 'vue';
 import ResumeHeader from "@/components/Header.vue";
 import ResumeExperience from "@/components/Experience.vue";
+import ResumeSkills from "@/components/Skills.vue";
+import ResumeEducation from "@/components/Education.vue";
 
 export default defineComponent({
   name: 'HomeView',
   components: {
     ResumeHeader,
     ResumeExperience,
+    ResumeSkills,
+    ResumeEducation,
   },
 });
 </script>
