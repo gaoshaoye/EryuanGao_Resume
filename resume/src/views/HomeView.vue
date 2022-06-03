@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="Eryuan-resume__box">
+    <ResumeHeader />
+    Eryuan Gao
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import ResumeHeader from "@/components/Header.vue";
 
 export default defineComponent({
   name: 'HomeView',
   components: {
-    HelloWorld,
+    ResumeHeader,
   },
 });
 </script>
+<style lang="scss" scoped>
+@import "@/assets/style.scss";
+.Eryuan-resume__box {
+  background: #ffffff;
+  height: 842px;
+  width: 595px;
+  margin: 40px auto;
+}
+</style>
