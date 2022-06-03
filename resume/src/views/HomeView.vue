@@ -1,7 +1,6 @@
 <template>
   <div class="Eryuan-resume__box">
     <ResumeHeader />
-    Eryuan Gao
   </div>
 </template>
 
@@ -20,8 +19,9 @@ export default defineComponent({
 @import "@/assets/style.scss";
 .Eryuan-resume__box {
   background: #ffffff;
-  height: 842px;
-  width: 595px;
+  height: 794px;
+  width: 507px;
   margin: 40px auto;
+  padding: 24px 44px;
 }
 </style>
