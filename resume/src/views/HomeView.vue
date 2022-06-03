@@ -29,7 +29,8 @@ export default defineComponent({
 .Eryuan-resume__box {
   background: #ffffff;
   min-height: 794px;
-  width: 507px;
+  max-width: 507px;
+  width: 100%;
   margin: 40px auto;
   padding: 24px 44px;
 }
