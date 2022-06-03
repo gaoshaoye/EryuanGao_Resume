@@ -28,7 +28,7 @@ export default defineComponent({
 @import "@/assets/style.scss";
 .Eryuan-resume__box {
   background: #ffffff;
-  height: 794px;
+  min-height: 794px;
   width: 507px;
   margin: 40px auto;
   padding: 24px 44px;
