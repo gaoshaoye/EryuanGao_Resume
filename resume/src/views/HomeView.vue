@@ -30,7 +30,6 @@ export default defineComponent({
   background: #ffffff;
   min-height: 794px;
   max-width: 507px;
-  width: 100%;
   margin: 40px auto;
   padding: 24px 44px;
 }

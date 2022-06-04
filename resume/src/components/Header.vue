@@ -5,12 +5,18 @@
         <div class="Eryuan-resume-h1">Eryuan Gao</div>
         <div class="Eryuan-resume-h2 mt-4">Front End Developer</div>
         <div class="Eryuan-resume-header__contact Eryuan-resume-row">
-          <LoadIcon :iconName="email_icon" />
-          <div class="Eryuan-resume-header__contact-text">gaoeryuan97@gmail.com</div>
-          <LoadIcon class="ml-10" :iconName="phone_icon" />
-          <div class="Eryuan-resume-header__contact-text">0427565969</div>
-          <LoadIcon class="ml-10" :iconName="github_icon" />
-          <div class="Eryuan-resume-header__contact-text"><a href="https://github.com/gaoshaoye">https://github.com/gaoshaoye</a></div>
+          <div class="Eryuan-resume-header__contact-item">
+            <LoadIcon class="ml-10" :iconName="email_icon" />
+            <div class="Eryuan-resume-header__contact-text">gaoeryuan97@gmail.com</div>
+          </div>
+          <div class="Eryuan-resume-header__contact-item">
+            <LoadIcon class="ml-10" :iconName="phone_icon" />
+            <div class="Eryuan-resume-header__contact-text">0427565969</div>
+          </div>
+          <div class="Eryuan-resume-header__contact-item">
+            <LoadIcon class="ml-10" :iconName="github_icon" />
+            <div class="Eryuan-resume-header__contact-text"><a href="https://github.com/gaoshaoye">https://github.com/gaoshaoye</a></div>
+          </div>
         </div>
       </div>
       <div class="Eryuan-resume-row__r">
@@ -54,8 +60,13 @@ export default defineComponent({
   @extend .Eryuan-resume-p2;
   margin-top: 14px;
   align-items: center;
+  flex-wrap: wrap;
+  margin-left: -10px;
   &-text {
     margin-left: 6px;
+  }
+  &-item {
+    display: flex;
   }
 }
 a {
@@ -74,7 +85,7 @@ a {
   margin-top: 18px;
   display: flex;
   &-text {
-    width: 494px;
+    max-width: 494px;
   }
   &-quotation {
     
@@ -87,6 +98,10 @@ a {
     padding-left: 439px;
     position: relative;
     margin-top: -15px;
+    @media screen and (max-width:595px) {
+     display: none;
+
+    }
     &:not(.end) {
       padding-left: 0px;
       margin-top: 0px;
