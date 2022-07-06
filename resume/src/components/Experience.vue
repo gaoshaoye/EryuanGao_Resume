@@ -21,7 +21,7 @@ export default defineComponent({
   },
   data(){
     return{
-      when:'Feb 2022 - Current',
+      when:'Feb 2022 - May 2022',
       where:'Getau | Sydney, Australia',
       what:'Front End Developer',
       textList: [
