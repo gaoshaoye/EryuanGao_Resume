@@ -15,7 +15,7 @@
           </div>
           <div class="Eryuan-resume-header__contact-item">
             <LoadIcon class="ml-10" :iconName="github_icon" />
-            <div class="Eryuan-resume-header__contact-text"><a href="https://github.com/gaoshaoye">https://github.com/gaoshaoye</a></div>
+            <div class="Eryuan-resume-header__contact-text"><a href="https://github.com/gaoshaoye">github.com/gaoshaoye</a> - <a href="https://www.linkedin.com/in/eryuan-gao/">www.linkedin.com/in/eryuan-gao/</a></div>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default defineComponent({
       email_icon: 'email_icon', 
       phone_icon: 'phone_icon',
       github_icon: 'link_icon',
-      bio: 'Eryuan Gao majored in web development, artificial intelligence, signal processing, pattern recognition, and machine vision. He is an educated and motivated web developer, and software engineer, who is quick to ramp up with any existing development platform and perform design, coding, debugging, and testing application and system software. He has the ability and experience in responsive web development with the MVC framework.',
+      bio: 'A motivated master of Information Technology majored in web development, artificial intelligence, pattern recognition, and machine vision. An educated web developer, and software engineer, who is quick to ramp up with any existing development platform and perform design, coding, debugging, and testing application and system software. Have the ability and experience in responsive web development with the MVC framework.',
     }
   },
 });

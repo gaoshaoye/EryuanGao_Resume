@@ -1,10 +1,11 @@
 <template>
-  <div class="Eryuan-resume__box">
-    <ResumeHeader />
-    <ResumeExperience />
-    <ResumeSkills />
-    <ResumeEducation />
-  </div>
+
+          <div class="Eryuan-resume__box">
+            <ResumeHeader />
+            <ResumeExperience />
+            <ResumeSkills />
+            <ResumeEducation />
+          </div>
 </template>
 
 <script lang="ts">
@@ -21,6 +22,7 @@ export default defineComponent({
     ResumeExperience,
     ResumeSkills,
     ResumeEducation,
+
   },
 });
 </script>
