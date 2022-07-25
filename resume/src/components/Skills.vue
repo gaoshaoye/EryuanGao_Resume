@@ -22,7 +22,7 @@ export default defineComponent({
         'Be able to operate popular Cloud Platforms( AWS, Google Cloud Platform, Alibaba Cloud Platform)',
         'Be able to develop Shell Scripts in Linux',
         'Have the capacity to be competent in machine learning and artificial intelligence( Natural Language Processing, Deep Learning, Neural Networks, Artificial Intelligence, Machine vision, Machine Learning & Data Mining)',
-        'Have a passion for fully communicating with designer team to solve problems',
+        'Have a passion for fully communicating with the design team to solve problems',
       ]
      
 
