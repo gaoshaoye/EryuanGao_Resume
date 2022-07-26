@@ -55,6 +55,34 @@ body {
     justify-content: space-between;
   }
 }
+.Eryuan-resume__pdf {
+  .Eryuan-resume {
+    &-h1 {
+      font-size: 24px;
+    }
+    &-h2 {
+      font-size: 18px;
+      line-height: 103.97%;
+    }
+    &-p1 {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    &-p2 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  .Eryuan-resume-bio {
+    &-text {
+      max-width: 706px;
+    }
+  }
+  .mt-4 {
+    margin-top: 8px;
+  }
+}
+
 .mt-4 {
   margin-top: 4px;
 }

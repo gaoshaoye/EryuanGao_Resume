@@ -1,13 +1,13 @@
 <template>
   <button @click="generateReport()">test</button>
-  <!-- <div class="Eryuan-resume__box">
+  <div class="Eryuan-resume__box">
     <ResumeHeader />
     <ResumeExperience />
     <ResumeSkills />
     <ResumeEducation />
-  </div> -->
+  </div>
   <vue3-html2pdf
-        :show-layout="true"
+        :show-layout="false"
         :enable-download="true"
         filename="Eryuan_Gao"
         :pdf-quality="2"
