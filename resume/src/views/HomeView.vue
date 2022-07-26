@@ -1,21 +1,25 @@
 <template>
   <button @click="generateReport()">test</button>
-  <div class="Eryuan-resume__box">
+  <!-- <div class="Eryuan-resume__box">
     <ResumeHeader />
     <ResumeExperience />
     <ResumeSkills />
     <ResumeEducation />
-  </div>
+  </div> -->
   <vue3-html2pdf
-        :show-layout="false"
+        :show-layout="true"
         :enable-download="true"
         filename="Eryuan_Gao"
         :pdf-quality="2"
         :manual-pagination="false"
-        pdf-format="a4"
-        pdf-orientation="landscape"
-        pdf-content-width="595px"
-
+        pdf-format="a5"
+        :float-layout="true"
+        :preview-modal="true"
+        :paginate-elements-by-height="1400"
+        :pdf-margin="0"
+        pdf-orientation="portrait"
+        pdf-content-width="794px"
+        :html-to-pdf-options="htmlToPdfOptions"
         @progress="onProgress($event)"
         @hasStartedGeneration="hasStartedGeneration()"
         @hasGenerated="hasGenerated($event)"
@@ -60,6 +64,30 @@ export default defineComponent({
             (this.$refs['html2Pdf'] as any).generatePdf()
         }
     },
+  data() {
+    return {
+      htmlToPdfOptions: {
+        filename: "Eryuan_Gao",
+        
+        // html2canvas: {
+        // // insert html2canvas options here, e.g.
+        //   width: 595,
+        //   height: 843,
+        // },
+        enableLinks: true,
+        image: {
+            type: 'jpeg',
+            quality:'1', 
+
+        },
+        jsPDF: {
+            unit: 'in',
+            format: 'a4',
+            orientation: 'portrait'
+        }
+    }
+    };
+  }
 });
 </script>
 <style lang="scss" scoped>
@@ -73,5 +101,14 @@ export default defineComponent({
 }
 .vue-html2pdf::v-deep .layout-container.show-layout {
   z-index: -1 !important;
+}
+.Eryuan-resume__pdf {
+  width: 706px;
+  height: 1075px;
+  // width: 595px;
+  // height: 842px;
+  margin:  auto;
+  padding: 24px 44px;
+  background-color: #ffffff;
 }
 </style>
