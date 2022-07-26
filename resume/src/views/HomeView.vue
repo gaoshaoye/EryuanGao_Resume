@@ -1,6 +1,6 @@
 <template>
-
-          <div class="Eryuan-resume__box">
+<button v-print="'#printMe'">Print local range</button>
+          <div class="Eryuan-resume__box" id="printMe">
             <ResumeHeader />
             <ResumeExperience />
             <ResumeSkills />
