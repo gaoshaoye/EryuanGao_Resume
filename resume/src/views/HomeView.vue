@@ -1,11 +1,11 @@
 <template>
-<button v-print="'#printMe'">Print local range</button>
-          <div class="Eryuan-resume__box" id="printMe">
-            <ResumeHeader />
-            <ResumeExperience />
-            <ResumeSkills />
-            <ResumeEducation />
-          </div>
+
+  <div class="Eryuan-resume__box" id="printCV">
+    <ResumeHeader />
+    <ResumeExperience />
+    <ResumeSkills />
+    <ResumeEducation />
+  </div>
 </template>
 
 <script lang="ts">

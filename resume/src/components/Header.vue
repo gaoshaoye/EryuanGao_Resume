@@ -3,7 +3,7 @@
     <div id="header-row" class="Eryuan-resume-row">
       <div class="Eryuan-resume-row__l">
         <div class="Eryuan-resume-h1">Eryuan Gao</div>
-        <div class="Eryuan-resume-h2 mt-4">Front End Developer</div>
+        <div class="Eryuan-resume-h2 mt-4">Sydney, NSW 2018</div>
         <div class="Eryuan-resume-header__contact Eryuan-resume-row">
           <div class="Eryuan-resume-header__contact-item">
             <LoadIcon class="ml-10" :iconName="email_icon" />
