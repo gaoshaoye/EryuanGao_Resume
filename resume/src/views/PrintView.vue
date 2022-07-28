@@ -5,24 +5,26 @@
     <button v-if="contentId=='#printCV'" @click="changePage()" class="CL_button">Cover Letter</button>
     <button class="print_button" v-print='contentId'>Print / Download</button>
   </div>
-  <div class="tool-bar__input">
+  <div class="tool-bar__input" v-if="contentId=='#printCL'">
       <input type="text" placeholder="Company Name" v-model="company" />
       <input type="text" placeholder="Position" v-model="position" />
   </div>
 </div>
 
 <HomeView v-if="contentId=='#printCV'" />
+<CoverLetterView v-if="contentId=='#printCL'" :company='company' :position='position'/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import HomeView from "@/views/HomeView.vue";
-
+import CoverLetterView from "@/views/CoverLetterView.vue";
 
 export default defineComponent({
   name: 'PrintView',
   components: {
-  HomeView
+  HomeView,
+  CoverLetterView,
   },
   data() {
     return {
