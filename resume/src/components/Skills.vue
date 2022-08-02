@@ -17,12 +17,10 @@ export default defineComponent({
   data(){
     return{
       textList: [
-        'Proficient in using a variety of Programming Languages( JavaScript, Python, Vue.js, jQuery, TypeScript, SCSS, C++)',
-        'Proficient in operating several IDEs( Anaconda, Visual Studio, Xcode, Android Studio)',
-        'Be able to operate popular Cloud Platforms( AWS, Google Cloud Platform, Alibaba Cloud Platform)',
-        'Be able to develop Shell Scripts in Linux',
-        'Have the capacity to be competent in machine learning and artificial intelligence( Natural Language Processing, Deep Learning, Neural Networks, Artificial Intelligence, Machine vision, Machine Learning & Data Mining)',
-        'Have a passion for fully communicating with designer team to solve problems',
+        'Programming Languages: JavaScript,C++, Python, Vue.js, jQuery, TypeScript, SCSS, Shell',
+        'IDEs: Anaconda, Visual Studio, Xcode, Android Studio',
+        'Cloud Platforms: AWS, Google Cloud Platform, Alibaba Cloud Platform',
+        'Machine Learning and Artificial Intelligence skills: Natural Language Processing, Deep Learning, Neural Networks, Machine vision,Data Mining',
       ]
      
 

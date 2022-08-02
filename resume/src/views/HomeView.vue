@@ -3,6 +3,7 @@
   <div class="Eryuan-resume__box" id="printCV">
     <ResumeHeader />
     <ResumeExperience />
+    <ResumeProject />
     <ResumeSkills />
     <ResumeEducation />
   </div>
@@ -12,6 +13,8 @@
 import { defineComponent } from 'vue';
 import ResumeHeader from "@/components/Header.vue";
 import ResumeExperience from "@/components/Experience.vue";
+import ResumeProject from "@/components/Project.vue";
+
 import ResumeSkills from "@/components/Skills.vue";
 import ResumeEducation from "@/components/Education.vue";
 
@@ -22,6 +25,7 @@ export default defineComponent({
     ResumeExperience,
     ResumeSkills,
     ResumeEducation,
+    ResumeProject,
 
   },
 });
